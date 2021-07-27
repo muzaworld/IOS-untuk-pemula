@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeroCell" id="KGk-i7-Jjw" customClass="HeroTableViewCell" customModule="OurHeroApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="111.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpI-MD-e3m">
+                        <rect key="frame" x="104" y="16.5" width="294" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SRc-ZL-lBD">
+                        <rect key="frame" x="16" y="16.5" width="80" height="80"/>
+                        <accessibility key="accessibilityConfiguration" identifier="HeroCell"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="8Y9-VV-3CV"/>
+                            <constraint firstAttribute="width" constant="80" id="ds7-fD-z6g"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4n-5C-x2U">
+                        <rect key="frame" x="104" y="48.5" width="294" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SRc-ZL-lBD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="7cU-O1-WLm"/>
+                    <constraint firstAttribute="bottom" secondItem="SRc-ZL-lBD" secondAttribute="bottom" constant="16" id="CJF-mV-hw7"/>
+                    <constraint firstItem="c4n-5C-x2U" firstAttribute="top" secondItem="hpI-MD-e3m" secondAttribute="bottom" constant="8" id="JxG-4j-4gx"/>
+                    <constraint firstItem="hpI-MD-e3m" firstAttribute="leading" secondItem="SRc-ZL-lBD" secondAttribute="trailing" constant="8" id="KJx-zx-zdn"/>
+                    <constraint firstItem="c4n-5C-x2U" firstAttribute="leading" secondItem="SRc-ZL-lBD" secondAttribute="trailing" constant="8" id="VBM-aa-aQ2"/>
+                    <constraint firstItem="SRc-ZL-lBD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="dsb-Ie-w7d"/>
+                    <constraint firstAttribute="trailing" secondItem="c4n-5C-x2U" secondAttribute="trailing" constant="16" id="hbC-zk-Jwe"/>
+                    <constraint firstItem="hpI-MD-e3m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="kDS-RQ-kYs"/>
+                    <constraint firstAttribute="trailing" secondItem="hpI-MD-e3m" secondAttribute="trailing" constant="16" id="ycv-qe-lmf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameHero" destination="hpI-MD-e3m" id="2j7-ti-JkJ"/>
+                <outlet property="photoHero" destination="SRc-ZL-lBD" id="koE-NQ-wjU"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="154.72263868065968"/>
+        </tableViewCell>
+    </objects>
+</document>
